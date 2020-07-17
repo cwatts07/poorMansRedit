@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { PostListItemComponent } from './post-list-item/post-list-item.component';
 import { PostPageComponent } from './post-page/post-page.component';
-
+import { RedditApiService } from './redit-api.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,7 @@ import { PostPageComponent } from './post-page/post-page.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [RedditApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,11 +4,11 @@ import { HttpClient } from '@angular/common/http'
 @Injectable({
   providedIn: 'root'
 })
-export class ReditApiService {
+export class RedditApiService {
 
   constructor(private http: HttpClient) { }
 
   getPosts(){
-    this.http.get('https://www.reddit.com/r/aww/.json')
+    return this.http.get('https://www.reddit.com/r/aww/.json');
   }
 }

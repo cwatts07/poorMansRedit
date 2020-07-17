@@ -1,1 +1,7 @@
-<p>post-list-item works!</p>
+<h2>{{singlePost.data.title}}</h2>
+<img src="{{singlePost.data.thumbnail}}">
+<div>
+    <a href="{{'https://reddit.com' + singlePost.data.permalink}}">Original Post</a>
+</div>
+<button (click)='hide()'>Remove</button>
+
