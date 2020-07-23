@@ -4,7 +4,7 @@ import { PostsListComponent } from './posts-list/posts-list.component'
 import { PostPageComponent } from './post-page/post-page.component'
 
 const routes: Routes = [
-  {path:'page', component:PostPageComponent},
+  {path:'page/:id', component:PostPageComponent},
   {path:'', component:PostsListComponent},
 ];
 
